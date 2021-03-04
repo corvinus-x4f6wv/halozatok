@@ -1,0 +1,48 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    color: fuchsia;
+}
+
+#listak {
+    display:flex;
+    background-color: fuchsia;
+    margin: auto;
+    flex: 1 1 auto;
+
+}
+
+a {
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+}
+
+    a:hover {
+        background-color: fuchsia;
+    }
+
+#elso {
+    line-height: 30px;
+}
+
+.szamozott {
+    margin: 3px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
