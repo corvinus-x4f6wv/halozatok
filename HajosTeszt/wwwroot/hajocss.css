@@ -1,10 +1,10 @@
 ﻿html, body {
     height: 100%;
+    background-color: #bbbfff;
 }
 
 div {
     margin: 10px;
-
 }
 
 #külső {
@@ -14,12 +14,18 @@ div {
 }
 
 #kérdés_szöveg {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f29ba;
+    background-color: #e9ebff;
+    padding: 20px;
 }
 
 #középső {
+    background-color: #e9ebff;
     display: flex;
     flex-direction: row;
-    flex-grow: 1
+    flex-grow: 1 /*ha van lehetősége növekedni, akkor növekedni fog*/
 }
 
 #válaszok {
@@ -30,12 +36,15 @@ div {
 #vezérlő {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /*A vezérlő két szélére kerüljön a két gomb*/
+    font-weight: bold;
+    text-align: center;
 }
 
 #kép {
-    overflow: hidden;
     flex-shrink: 0;
+    flex-shrink: 0;
+    max-width: 50%;
 }
 
 .gomb {
@@ -44,10 +53,31 @@ div {
 }
 
 .kerdes {
-    border: 3px solid black
+    font-size: 15px;
+    font-weight: bold;
+    color: #1f29ba;
+    padding: 10px;
 }
 
-.kattintható:hover {
-    background-color: fuchsia;
-    color: white;
+.kattinthato {
+    border: 2px solid #1f29ba;
+    background-color: white;
+    color: #1f29ba;
+}
+
+    .kattinthato:hover {
+        background-color: #4b56f8;
+        color: white;
+    }
+
+.jo {
+    background-color: lightgreen;
+}
+
+.rossz {
+    background-color: lightsalmon;
+}
+
+.rejtett {
+    display: none;
 }
